@@ -14,7 +14,7 @@
 					$res = $mysql->query($sql);
 					if ($res != NULL){
 						$obj = $res->fetch_object();
-						echo "<b>Player</b>: " . $obj->cnt . "<br>\n";
+						echo "<b>Players</b>: " . $obj->cnt . "<br>\n";
 					}
 					$sql = "SELECT COUNT(instanceid) as cnt FROM instances;";
 					$res = $mysql->query($sql);
